@@ -1,0 +1,156 @@
+\hypertarget{classNode}{\section{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+}
+
+
+\hyperlink{classNode}{Node} from openstreetmap.  
+
+
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNode_ad7a34779cad45d997bfd6d3d8043c75f}{Node} ()
+\item 
+virtual \hyperlink{classNode_aa0840c3cb5c7159be6d992adecd2097c}{$\sim$\+Node} ()
+\item 
+unsigned long \hyperlink{classNode_a0557c98e510afe0964734b397f2fcd2a}{get\+I\+D} ()
+\begin{DoxyCompactList}\small\item\em I\+D-\/getter. \end{DoxyCompactList}\item 
+float \hyperlink{classNode_ad6be1e5333414b24f7c3ce59a64b5112}{get\+Longitude} ()
+\item 
+float \hyperlink{classNode_aa6baaf1097d6196c4cac5f3337adfc7f}{get\+Latitude} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classNode}{Node} from openstreetmap. 
+
+A class representing a \hyperlink{classNode}{Node} in openstreetmap speaking. It contains the O\+S\+M I\+D of that node, its longitude and its latitude
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+April 02, 2016 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNode_ad7a34779cad45d997bfd6d3d8043c75f}{\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}Node\+::\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNode_ad7a34779cad45d997bfd6d3d8043c75f}
+Constrtuctor
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\hypertarget{classNode_aa0840c3cb5c7159be6d992adecd2097c}{\index{Node@{Node}!````~Node@{$\sim$\+Node}}
+\index{````~Node@{$\sim$\+Node}!Node@{Node}}
+\subsubsection[{$\sim$\+Node}]{\setlength{\rightskip}{0pt plus 5cm}Node\+::$\sim$\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classNode_aa0840c3cb5c7159be6d992adecd2097c}
+Destructor
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNode_a0557c98e510afe0964734b397f2fcd2a}{\index{Node@{Node}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!Node@{Node}}
+\subsubsection[{get\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Node\+::get\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNode_a0557c98e510afe0964734b397f2fcd2a}
+
+
+I\+D-\/getter. 
+
+Getter method for the \hyperlink{classNode}{Node}'s I\+D number
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+1
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+I\+D as 64bit integer 
+\end{DoxyReturn}
+\hypertarget{classNode_aa6baaf1097d6196c4cac5f3337adfc7f}{\index{Node@{Node}!get\+Latitude@{get\+Latitude}}
+\index{get\+Latitude@{get\+Latitude}!Node@{Node}}
+\subsubsection[{get\+Latitude}]{\setlength{\rightskip}{0pt plus 5cm}float Node\+::get\+Latitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNode_aa6baaf1097d6196c4cac5f3337adfc7f}
+Getter method for the latitude coordinate. The longitude's format is dd.\+ddddd with sign. North is postive, south is negative.
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+1
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classNode}{Node}'s latitude coordinate in dd.\+dddd format as 32bit floating point number 
+\end{DoxyReturn}
+\hypertarget{classNode_ad6be1e5333414b24f7c3ce59a64b5112}{\index{Node@{Node}!get\+Longitude@{get\+Longitude}}
+\index{get\+Longitude@{get\+Longitude}!Node@{Node}}
+\subsubsection[{get\+Longitude}]{\setlength{\rightskip}{0pt plus 5cm}float Node\+::get\+Longitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNode_ad6be1e5333414b24f7c3ce59a64b5112}
+Getter method for the longitude coordinate. The longitude's format is dd.\+ddddd with sign. East is postive, west is negative.
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+1
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classNode}{Node}'s longitude coordinate in dd.\+dddd format as 32bit floating point number 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Node.\+h\item 
+Node.\+cpp\end{DoxyCompactItemize}
