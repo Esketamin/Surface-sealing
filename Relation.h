@@ -1,6 +1,7 @@
 #ifndef RELATION_H_
 #define RELATION_H_
 
+#include <map>
 #include <vector>
 #include "Way.h"
 
@@ -25,9 +26,15 @@ class Relation
 		Relation();
 		virtual ~Relation();
 		
+		void addWay(Way* way,char role);
+		
 	private:
 		unsigned long _ID;
-		vector<Way*>* _ways; //TODO maybe store all contents in here
+		//map: Key is road's ID, char is 'i' for inner, 'o' for outer
+		map<unsigned long,char>* _role; //TODO maybe store all contents in here
+		vector<Way*>* _ways;
+		
+		
 };
 
 #endif // RELATION_H_

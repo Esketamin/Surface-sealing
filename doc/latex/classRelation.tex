@@ -3,26 +3,28 @@
 }
 
 
-O\+S\+M \hyperlink{classRelation}{Relation}.  
+O\-S\-M \hyperlink{classRelation}{Relation}.  
 
 
 
 
-{\ttfamily \#include $<$Relation.\+h$>$}
+{\ttfamily \#include $<$Relation.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classRelation_a55f2c9d5ae6413cb72c114e583e359ef}{Relation} ()
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-virtual \hyperlink{classRelation_ad8bc5c349f9d98b15972fd0b09f341cc}{$\sim$\+Relation} ()
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual \hyperlink{classRelation_ad8bc5c349f9d98b15972fd0b09f341cc}{$\sim$\-Relation} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classRelation_ada952e2d9743075b92da916629050733}{add\-Way} (\hyperlink{classWay}{Way} $\ast$way, char role)
+\begin{DoxyCompactList}\small\item\em add a way and its role \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-O\+S\+M \hyperlink{classRelation}{Relation}. 
+O\-S\-M \hyperlink{classRelation}{Relation}. 
 
-A class representing a O\+S\+M relation. Relations store several objects, that are related to each other.
+A class representing a O\-S\-M relation. Relations store several objects, that are related to each other.
 
 \begin{DoxyNote}{Note}
 This early version only stores relations between \hyperlink{classWay}{Way} objects
@@ -34,14 +36,14 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1 
+0.\-1 
 \end{DoxyVersion}
 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classRelation_a55f2c9d5ae6413cb72c114e583e359ef}{\index{Relation@{Relation}!Relation@{Relation}}
 \index{Relation@{Relation}!Relation@{Relation}}
-\subsubsection[{Relation}]{\setlength{\rightskip}{0pt plus 5cm}Relation\+::\+Relation (
+\subsubsection[{Relation}]{\setlength{\rightskip}{0pt plus 5cm}Relation\-::\-Relation (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -59,11 +61,11 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1 
+0.\-1 
 \end{DoxyVersion}
-\hypertarget{classRelation_ad8bc5c349f9d98b15972fd0b09f341cc}{\index{Relation@{Relation}!````~Relation@{$\sim$\+Relation}}
-\index{````~Relation@{$\sim$\+Relation}!Relation@{Relation}}
-\subsubsection[{$\sim$\+Relation}]{\setlength{\rightskip}{0pt plus 5cm}Relation\+::$\sim$\+Relation (
+\hypertarget{classRelation_ad8bc5c349f9d98b15972fd0b09f341cc}{\index{Relation@{Relation}!$\sim$\-Relation@{$\sim$\-Relation}}
+\index{$\sim$\-Relation@{$\sim$\-Relation}!Relation@{Relation}}
+\subsubsection[{$\sim$\-Relation}]{\setlength{\rightskip}{0pt plus 5cm}Relation\-::$\sim$\-Relation (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -81,11 +83,44 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1 
+0.\-1 
 \end{DoxyVersion}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\subsection{Member Function Documentation}
+\hypertarget{classRelation_ada952e2d9743075b92da916629050733}{\index{Relation@{Relation}!add\-Way@{add\-Way}}
+\index{add\-Way@{add\-Way}!Relation@{Relation}}
+\subsubsection[{add\-Way}]{\setlength{\rightskip}{0pt plus 5cm}void Relation\-::add\-Way (
+\begin{DoxyParamCaption}
+\item[{{\bf Way} $\ast$}]{way, }
+\item[{char}]{role}
+\end{DoxyParamCaption}
+)}}\label{classRelation_ada952e2d9743075b92da916629050733}
+
+
+add a way and its role 
+
+Adds the I\-D of \hyperlink{classWay}{Way} and maps it to a char, representing the role of the \hyperlink{classWay}{Way}. Adds the \hyperlink{classWay}{Way} to a list of ways in this \hyperlink{classRelation}{Relation}.
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 3, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\-1
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em way} & The way, that is to be added to the relation \\
+\hline
+{\em role} & A char representing the role of the \hyperlink{classWay}{Way} way within the relation. The char can be anything, but only 'i' for inner and 'o' for outer will be used. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Relation.\+h\item 
-Relation.\+cpp\end{DoxyCompactItemize}
+Relation.\-h\item 
+Relation.\-cpp\end{DoxyCompactItemize}
