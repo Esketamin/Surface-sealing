@@ -7,11 +7,11 @@
  * 
  * @author Stefan
  * @date April 3, 2016
- * @version 0.1
+ * @version 0.2
  */
-Way::Way()
+Way::Way(unsigned long ID)
 {
-	//TODO do nothing
+	_ID = ID;
 }
 
 /**
@@ -31,6 +31,22 @@ Way::~Way()
 	{
 		delete node;
 	}
+}
+
+/**
+ * Getter method for the ID number of this Way.
+ * 
+ * @brief ID getter
+ * 
+ * @author Stefan
+ * @date April 3, 2016
+ * @version 0.1
+ * 
+ * @return The ID number of that Way as 64bit integer
+ */
+unsigned long Way::getID()
+{
+	return _ID;
 }
 
 /**

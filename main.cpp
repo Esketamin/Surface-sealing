@@ -1,6 +1,9 @@
 #include <iostream>
-#include "Node.h"
 #include <vector>
+#include <map>
+#include "Node.h"
+#include "Way.h"
+
 
 using namespace std;
 
@@ -17,6 +20,16 @@ int main()
 	nodes->push_back(new Node(6,1.5,0.5));
 	nodes->push_back(new Node(7,1.5,1.5));
 	nodes->push_back(new Node(8,0.5,1.5));
+
+	Way* way = new Way(42);
+	
+	for(int i = 0; i < 4; i++)
+	{
+		way->addNode(nodes->at(i));
+	}
+	
+	map<unsigned long, Way*>* ways = new map<unsigned long, Way*>;
+	(*ways)[way->getID()] = way;
 	
 	return 0;
 }

@@ -18,14 +18,16 @@ using namespace std;
 class Way
 {
 	public:
-		Way();
+		Way(unsigned long ID);
 		virtual ~Way();
 		
+		unsigned long getID();
 		vector<Node*>* getNodes();
 		void addNode(Node* node);
 		
 	private:
 		vector<Node*> _nodes;
+		unsigned long _ID;
 };
 
 #endif //WAY_H_

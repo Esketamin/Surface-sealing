@@ -8,18 +8,20 @@
 
 
 
-{\ttfamily \#include $<$Way.\+h$>$}
+{\ttfamily \#include $<$Way.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classWay_a420b7bfe31b1c68e90c3ca1c60edee06}{Way} ()
+\hyperlink{classWay_ab4715d81653126b9c799aff81facf800}{Way} (unsigned long I\-D)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-virtual \hyperlink{classWay_aa118212423fa0f1b5c33663e1e0d0b74}{$\sim$\+Way} ()
+virtual \hyperlink{classWay_aa118212423fa0f1b5c33663e1e0d0b74}{$\sim$\-Way} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-vector$<$ \hyperlink{classNode}{Node} $\ast$ $>$ $\ast$ \hyperlink{classWay_a690c2eeae8128b5f8d201bba41570d71}{get\+Nodes} ()
+unsigned long \hyperlink{classWay_a860214f9a48695b794298c29c829fc40}{get\-I\-D} ()
+\begin{DoxyCompactList}\small\item\em I\-D getter. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classNode}{Node} $\ast$ $>$ $\ast$ \hyperlink{classWay_a690c2eeae8128b5f8d201bba41570d71}{get\-Nodes} ()
 \begin{DoxyCompactList}\small\item\em \hyperlink{classNode}{Node} getter. \end{DoxyCompactList}\item 
-void \hyperlink{classWay_ada3668577e62311e7c56d2575e5edd00}{add\+Node} (\hyperlink{classNode}{Node} $\ast$node)
+void \hyperlink{classWay_ada3668577e62311e7c56d2575e5edd00}{add\-Node} (\hyperlink{classNode}{Node} $\ast$node)
 \begin{DoxyCompactList}\small\item\em Add a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -35,18 +37,18 @@ Stefan
 April 03, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1 
+0.\-1 
 \end{DoxyVersion}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classWay_a420b7bfe31b1c68e90c3ca1c60edee06}{\index{Way@{Way}!Way@{Way}}
+\hypertarget{classWay_ab4715d81653126b9c799aff81facf800}{\index{Way@{Way}!Way@{Way}}
 \index{Way@{Way}!Way@{Way}}
-\subsubsection[{Way}]{\setlength{\rightskip}{0pt plus 5cm}Way\+::\+Way (
+\subsubsection[{Way}]{\setlength{\rightskip}{0pt plus 5cm}Way\-::\-Way (
 \begin{DoxyParamCaption}
-{}
+\item[{unsigned long}]{I\-D}
 \end{DoxyParamCaption}
-)}}\label{classWay_a420b7bfe31b1c68e90c3ca1c60edee06}
+)}}\label{classWay_ab4715d81653126b9c799aff81facf800}
 
 
 Constructor. 
@@ -60,11 +62,11 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1 
+0.\-2 
 \end{DoxyVersion}
-\hypertarget{classWay_aa118212423fa0f1b5c33663e1e0d0b74}{\index{Way@{Way}!````~Way@{$\sim$\+Way}}
-\index{````~Way@{$\sim$\+Way}!Way@{Way}}
-\subsubsection[{$\sim$\+Way}]{\setlength{\rightskip}{0pt plus 5cm}Way\+::$\sim$\+Way (
+\hypertarget{classWay_aa118212423fa0f1b5c33663e1e0d0b74}{\index{Way@{Way}!$\sim$\-Way@{$\sim$\-Way}}
+\index{$\sim$\-Way@{$\sim$\-Way}!Way@{Way}}
+\subsubsection[{$\sim$\-Way}]{\setlength{\rightskip}{0pt plus 5cm}Way\-::$\sim$\-Way (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -82,7 +84,7 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1
+0.\-1
 \end{DoxyVersion}
 \begin{DoxyWarning}{Warning}
 Deletes the node objects belonging to this way. 
@@ -90,9 +92,9 @@ Deletes the node objects belonging to this way.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classWay_ada3668577e62311e7c56d2575e5edd00}{\index{Way@{Way}!add\+Node@{add\+Node}}
-\index{add\+Node@{add\+Node}!Way@{Way}}
-\subsubsection[{add\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Way\+::add\+Node (
+\hypertarget{classWay_ada3668577e62311e7c56d2575e5edd00}{\index{Way@{Way}!add\-Node@{add\-Node}}
+\index{add\-Node@{add\-Node}!Way@{Way}}
+\subsubsection[{add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void Way\-::add\-Node (
 \begin{DoxyParamCaption}
 \item[{{\bf Node} $\ast$}]{node}
 \end{DoxyParamCaption}
@@ -110,16 +112,41 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1
+0.\-1
 \end{DoxyVersion}
 
 \begin{DoxyParams}{Parameters}
 {\em node} & The node to be added \\
 \hline
 \end{DoxyParams}
-\hypertarget{classWay_a690c2eeae8128b5f8d201bba41570d71}{\index{Way@{Way}!get\+Nodes@{get\+Nodes}}
-\index{get\+Nodes@{get\+Nodes}!Way@{Way}}
-\subsubsection[{get\+Nodes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Node} $\ast$ $>$ $\ast$ Way\+::get\+Nodes (
+\hypertarget{classWay_a860214f9a48695b794298c29c829fc40}{\index{Way@{Way}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!Way@{Way}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Way\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWay_a860214f9a48695b794298c29c829fc40}
+
+
+I\-D getter. 
+
+Getter method for the I\-D number of this \hyperlink{classWay}{Way}.
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 3, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\-1
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+The I\-D number of that \hyperlink{classWay}{Way} as 64bit integer 
+\end{DoxyReturn}
+\hypertarget{classWay_a690c2eeae8128b5f8d201bba41570d71}{\index{Way@{Way}!get\-Nodes@{get\-Nodes}}
+\index{get\-Nodes@{get\-Nodes}!Way@{Way}}
+\subsubsection[{get\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Node} $\ast$ $>$ $\ast$ Way\-::get\-Nodes (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -137,17 +164,17 @@ Stefan
 April 3, 2016 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-0.\+1
+0.\-1
 \end{DoxyVersion}
 \begin{DoxyReturn}{Returns}
-The list of nodes, that belong to this way as std\+::vector$<$\+Node$\ast$$>$
+The list of nodes, that belong to this way as std\-::vector$<$\-Node$\ast$$>$
 \end{DoxyReturn}
 \begin{DoxyWarning}{Warning}
 Original list of nodes. 
 \end{DoxyWarning}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Way.\+h\item 
-Way.\+cpp\end{DoxyCompactItemize}
+Way.\-h\item 
+Way.\-cpp\end{DoxyCompactItemize}
