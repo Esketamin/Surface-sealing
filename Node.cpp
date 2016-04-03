@@ -7,11 +7,11 @@
  * @date April 2, 2016
  * @version 0.1
  */
-Node::Node()
+Node::Node(unsigned long ID, float longitude, float latitude)
 {
-	_ID = 123;
-	_longitude = 50.00;
-	_latitude = 10.00;
+	_ID = ID;
+	_longitude = longitude;
+	_latitude = latitude;
 }
 
 /**

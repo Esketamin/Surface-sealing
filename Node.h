@@ -17,8 +17,9 @@
 class Node
 {
 	public:
-		Node();
+		Node(unsigned long ID, float longitude, float latitude);
 		virtual ~Node();
+		
 		unsigned long getID();
 		float getLongitude();
 		float getLatitude();
