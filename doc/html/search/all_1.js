@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['node',['Node',['../classNode.html',1,'Node'],['../classNode.html#ad7a34779cad45d997bfd6d3d8043c75f',1,'Node::Node()']]]
+  ['getid',['getID',['../classNode.html#a0557c98e510afe0964734b397f2fcd2a',1,'Node']]],
+  ['getlatitude',['getLatitude',['../classNode.html#aa6baaf1097d6196c4cac5f3337adfc7f',1,'Node']]],
+  ['getlongitude',['getLongitude',['../classNode.html#ad6be1e5333414b24f7c3ce59a64b5112',1,'Node']]],
+  ['getnodes',['getNodes',['../classWay.html#a690c2eeae8128b5f8d201bba41570d71',1,'Way']]]
 ];

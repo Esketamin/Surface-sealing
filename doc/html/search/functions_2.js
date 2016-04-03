@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7enode',['~Node',['../classNode.html#aa0840c3cb5c7159be6d992adecd2097c',1,'Node']]]
+  ['node',['Node',['../classNode.html#aa05b9dee7504eb498c92b42a3b7b4feb',1,'Node']]]
 ];

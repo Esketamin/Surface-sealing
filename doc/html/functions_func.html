@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -76,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,6 +88,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 &#160;<ul>
+<li>addNode()
+: <a class="el" href="classWay.html#ada3668577e62311e7c56d2575e5edd00">Way</a>
+</li>
 <li>getID()
 : <a class="el" href="classNode.html#a0557c98e510afe0964734b397f2fcd2a">Node</a>
 </li>
@@ -96,17 +100,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getLongitude()
 : <a class="el" href="classNode.html#ad6be1e5333414b24f7c3ce59a64b5112">Node</a>
 </li>
+<li>getNodes()
+: <a class="el" href="classWay.html#a690c2eeae8128b5f8d201bba41570d71">Way</a>
+</li>
 <li>Node()
-: <a class="el" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node</a>
+: <a class="el" href="classNode.html#aa05b9dee7504eb498c92b42a3b7b4feb">Node</a>
+</li>
+<li>Way()
+: <a class="el" href="classWay.html#a420b7bfe31b1c68e90c3ca1c60edee06">Way</a>
 </li>
 <li>~Node()
 : <a class="el" href="classNode.html#aa0840c3cb5c7159be6d992adecd2097c">Node</a>
+</li>
+<li>~Way()
+: <a class="el" href="classWay.html#aa118212423fa0f1b5c33663e1e0d0b74">Way</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 2 2016 13:10:27 for OSM area calculation by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 10:42:24 for OSM area calculation by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

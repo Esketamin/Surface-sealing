@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.4.0 (30407 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="0.0" minlon="0.0" maxlat="2.0" maxlon="2.00"/>
+ <node id="1" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="0.0" lon="0.0"/>
+ <node id="2" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="0.0" lon="2.0"/>
+ <node id="3" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="2.0" lon="2.0"/>
+ <node id="4" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="2.0" lon="0.0"/>
+ <node id="5" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="0.5" lon="0.5"/>
+ <node id="6" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="0.5" lon="1.5"/>
+ <node id="7" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="1.5" lon="1.5"/>
+ <node id="8" visible="true" version="10" changeset="1" timestamp="2009-12-11T09:30:34Z" user="fakeman" uid="1337" lat="1.5" lon="0.5"/>
+ <way id="42" visible="true" version="1" changeset="1" timestamp="2010-04-11T21:15:30Z" user="fakeman" uid="1337">
+  <nd ref="1"/>
+  <nd ref="2"/>
+  <nd ref="3"/>
+  <nd ref="4"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="43" visible="true" version="1" changeset="1" timestamp="2010-04-11T21:15:30Z" user="fakeman" uid="1337">
+  <nd ref="5"/>
+  <nd ref="6"/>
+  <nd ref="7"/>
+  <nd ref="8"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <relation id="1337" visible="true" version="22" changeset="1" timestamp="2016-02-01T12:40:01Z" user="fakeman" uid="1337">
+  <member type="way" ref="42" role="outer"/>
+  <member type="way" ref="43" role="inner"/>
+ </relation>

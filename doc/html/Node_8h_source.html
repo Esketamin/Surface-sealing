@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,28 +92,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classNode.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classNode.html">Node</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classNode.html#aa05b9dee7504eb498c92b42a3b7b4feb">Node</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ID, <span class="keywordtype">float</span> longitude, <span class="keywordtype">float</span> latitude);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classNode.html#aa0840c3cb5c7159be6d992adecd2097c">~Node</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classNode.html#a0557c98e510afe0964734b397f2fcd2a">getID</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classNode.html#ad6be1e5333414b24f7c3ce59a64b5112">getLongitude</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classNode.html#aa6baaf1097d6196c4cac5f3337adfc7f">getLatitude</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _ID;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">float</span> _longitude;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">float</span> _latitude;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif //NODE_H_</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classNode.html#a0557c98e510afe0964734b397f2fcd2a">getID</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classNode.html#ad6be1e5333414b24f7c3ce59a64b5112">getLongitude</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classNode.html#aa6baaf1097d6196c4cac5f3337adfc7f">getLatitude</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _ID;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">float</span> _longitude;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">float</span> _latitude;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif //NODE_H_</span></div>
 <div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">Node from openstreetmap. </div><div class="ttdef"><b>Definition:</b> Node.h:17</div></div>
-<div class="ttc" id="classNode_html_ad7a34779cad45d997bfd6d3d8043c75f"><div class="ttname"><a href="classNode.html#ad7a34779cad45d997bfd6d3d8043c75f">Node::Node</a></div><div class="ttdeci">Node()</div><div class="ttdef"><b>Definition:</b> Node.cpp:10</div></div>
 <div class="ttc" id="classNode_html_a0557c98e510afe0964734b397f2fcd2a"><div class="ttname"><a href="classNode.html#a0557c98e510afe0964734b397f2fcd2a">Node::getID</a></div><div class="ttdeci">unsigned long getID()</div><div class="ttdoc">ID-getter. </div><div class="ttdef"><b>Definition:</b> Node.cpp:40</div></div>
 <div class="ttc" id="classNode_html_aa6baaf1097d6196c4cac5f3337adfc7f"><div class="ttname"><a href="classNode.html#aa6baaf1097d6196c4cac5f3337adfc7f">Node::getLatitude</a></div><div class="ttdeci">float getLatitude()</div><div class="ttdef"><b>Definition:</b> Node.cpp:72</div></div>
 <div class="ttc" id="classNode_html_ad6be1e5333414b24f7c3ce59a64b5112"><div class="ttname"><a href="classNode.html#ad6be1e5333414b24f7c3ce59a64b5112">Node::getLongitude</a></div><div class="ttdeci">float getLongitude()</div><div class="ttdef"><b>Definition:</b> Node.cpp:56</div></div>
 <div class="ttc" id="classNode_html_aa0840c3cb5c7159be6d992adecd2097c"><div class="ttname"><a href="classNode.html#aa0840c3cb5c7159be6d992adecd2097c">Node::~Node</a></div><div class="ttdeci">virtual ~Node()</div><div class="ttdef"><b>Definition:</b> Node.cpp:24</div></div>
+<div class="ttc" id="classNode_html_aa05b9dee7504eb498c92b42a3b7b4feb"><div class="ttname"><a href="classNode.html#aa05b9dee7504eb498c92b42a3b7b4feb">Node::Node</a></div><div class="ttdeci">Node(unsigned long ID, float longitude, float latitude)</div><div class="ttdef"><b>Definition:</b> Node.cpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 2 2016 13:10:27 for OSM area calculation by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 3 2016 10:42:24 for OSM area calculation by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
