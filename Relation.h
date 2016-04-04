@@ -31,10 +31,9 @@ class Relation
 	private:
 		unsigned long _ID;
 		//map: Key is road's ID, char is 'i' for inner, 'o' for outer
+		//TODO a tree might be useful here
 		map<unsigned long,char>* _role; //TODO maybe store all contents in here
 		vector<Way*>* _ways;
-		
-		
 };
 
 #endif // RELATION_H_
