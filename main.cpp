@@ -32,4 +32,7 @@ int main()
 	(*ways)[way->getID()] = way;
 	
 	return 0;
+	//TODO add unittests
+	//TODO add OSM parser
+	//TODO design class layout for function
 }

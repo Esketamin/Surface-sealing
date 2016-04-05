@@ -7,6 +7,19 @@
 
 using namespace std;
 
+/**
+ * Struct containing a way and its role as a char to store the content of a Relation.
+ * 
+ * @author Stefan
+ * @date April 05,2016
+ * @version 0.1
+ */
+typedef struct
+{
+	Way* way;
+	char role;
+} RelatedWay;
+
 
 /**
  * A class representing a OSM relation. Relations store several objects,
